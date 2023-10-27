@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import "boxicons";
+import { Link } from "react-scroll";
 function Header() {
   return (
     <div className="header">
@@ -9,13 +10,12 @@ function Header() {
       </a>
       <i className="bx bx-menu" id="menu-icon"></i>
       <nav className="navbar">
-        <a href="home" className="active">
-          About
-        </a>
-        <a href="education">Education</a>
-        <a href="experirnce">Experience</a>
-        <a href="project">Projects</a>
-        <a href="contact">Contact</a>
+        <Link className="menuItem">About</Link>
+        <Link className="menuItem">Education</Link>
+        <Link className="menuItem">Experience</Link>
+        <Link className="menuItem">Projects</Link>
+        <Link className="menuItem">Contact</Link>
+         
       </nav>
     </div>
   );
